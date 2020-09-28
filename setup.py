@@ -15,7 +15,7 @@ with open("README.md", 'r') as fh:
 
 setuptools.setup(
     name='lambdata-thecodinguru',
-    version='0.0.5',
+    version='0.1.5',
     author='thecodinguru',
     description='A collection of Data Science helper functions',
     long_description=LONG_DESCRIPTION,
