@@ -24,8 +24,9 @@ def wrangle(df):
   df["dt"] = pd.to_datetime(df["dt"])
   df["Month"] = df["dt"].dt.month
   df["Year"] = df["dt"].dt.year
+  df["Day"] = df["dt"].dt.day
   df = df.drop("dt", axis = 1)
-  df = df.drop("Month", axis=1)
+  #df = df.drop("Month", axis=1)
   df = df[df.Year >= 1850]
 
   #set index to Year column
